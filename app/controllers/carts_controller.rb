@@ -2,6 +2,7 @@ class CartsController < ApplicationController
     before_action :current_cart
 
     def show
+        @current_cart = Cart.find(params[:id])
     end
 
     def checkout
