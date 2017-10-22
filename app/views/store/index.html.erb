@@ -5,3 +5,7 @@
 <% @items.each do |item| %>
   <p><%= item.title %> | <%= number_to_currency(item.price) %> | <%= button_to 'Add to Cart', line_items_path(item_id: item) %></p>
 <% end %>
+
+<% if current_user.current_cart != nil %>
+<li> <%= link_to "Cart", cart_path(current_user.current_cart) %></li>
+<% end %>

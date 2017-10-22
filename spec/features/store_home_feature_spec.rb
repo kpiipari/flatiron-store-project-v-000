@@ -1,3 +1,5 @@
+require 'rails_helper'
+
 describe 'Feature Test: Store', :type => :feature do
     describe "Category List" do
       it "displays all of the categories as links" do

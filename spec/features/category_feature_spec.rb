@@ -1,3 +1,5 @@
+require 'rails_helper'
+
 describe 'Feature Test: Category', :type => :feature do
 
   describe "Item List" do

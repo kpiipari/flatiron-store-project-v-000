@@ -1,3 +1,5 @@
+require 'rails_helper'
+
 describe 'Feature Test: Cart', :type => :feature do
 
   describe "Checking out" do
